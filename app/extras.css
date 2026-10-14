@@ -1,0 +1,6 @@
+/* Additions for the live site (not in the design canvas) */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 84px; }
+html.tc-lite-html .tc-intro,
+html.tc-skip-intro .tc-intro { display: none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
