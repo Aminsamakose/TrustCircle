@@ -23,6 +23,7 @@ import FaqModal from './sections/FaqModal';
 import MemberModal from './sections/MemberModal';
 import LoanModal from './sections/LoanModal';
 import ContactModal from './sections/ContactModal';
+import LegalModal from './sections/LegalModal';
 
 export default function HomeClient() {
   const v = useHomeState();
@@ -52,6 +53,7 @@ export default function HomeClient() {
       <MemberModal v={v} />
       <LoanModal v={v} />
       <ContactModal v={v} />
+      <LegalModal v={v} />
     </div>
   );
 }

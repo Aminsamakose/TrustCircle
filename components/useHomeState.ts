@@ -18,6 +18,10 @@ export type Vals = {
   memberOpen: boolean;
   loanOpen: boolean;
   contactOpen: boolean;
+  privacyOpen: boolean;
+  termsOpen: boolean;
+  openPrivacy: Handler;
+  openTerms: Handler;
   openFaq: Handler;
   openMember: Handler;
   openLoan: Handler;
@@ -127,10 +131,14 @@ export function useHomeState(): Vals {
       memberOpen: modal === 'member',
       loanOpen: modal === 'loan',
       contactOpen: modal === 'contact',
+      privacyOpen: modal === 'privacy',
+      termsOpen: modal === 'terms',
       openFaq: open('faq'),
       openMember: open('member'),
       openLoan: open('loan'),
       openContact: open('contact'),
+      openPrivacy: open('privacy'),
+      openTerms: open('terms'),
       closeModal: () => setModal(''),
     };
     for (let i = 0; i < FAQ_COUNT; i++) {
